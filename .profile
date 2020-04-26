@@ -84,7 +84,7 @@ alias emd="emacs --daemon"
 alias ect="emacsclient -nw"
 
 # tmux
-alias tmux="tmux -f /home/llouice/.mycfgs/.tmux/.tmux.conf"
+alias tmux="tmux -f /home/llouice/.config/tmux/.tmux.conf"
 alias tn="tmux new -s"
 alias ta="tmux attach -t"
 alias tl="tmux list-sessions"
