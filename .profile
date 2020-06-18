@@ -60,6 +60,7 @@ alias cfgz="nvim ~/.zshrc"
 alias rz="source $HOME/.zshrc"
 alias e.="dolphin ."
 alias dact="conda deactivate"
+alias tch="conda activate tch"
 # alias login="bash ~/docs/sc-bupt.sh --start 2018110757 221216"
 # alias v2ray="v2ray -config /etc/v2ray/config.json"
 # alias l='ls -CF'
@@ -68,11 +69,12 @@ alias dact="conda deactivate"
 # alias lt='ll -th'
 
 # conda 
-# alias tb="tensorboard --logdir=."
-# alias fastai="conda activate fastai"
-# alias tf="conda activate tf"
-# alias dact="conda deactivate"
-# alias tf1="conda activate tf1"
+alias dact="conda deactivate"
+alias tch="conda activate tch"
+#alias tb="tensorboard --logdir=."
+#alias fastai="conda activate fastai"
+#alias tf="conda activate tf"
+#alias tf1="conda activate tf1"
 
 
 # junest
@@ -92,6 +94,9 @@ alias tlb="tmux list-buffers"
 alias tlw="tmux list-windows"
 alias tk="tmux kill-session -t"
 alias tks="tmux kill-server"
+
+# lazygit
+alias lg="lazygit"
 #=============================== alias ====================================
 
 #=============================== export ====================================
