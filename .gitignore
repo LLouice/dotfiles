@@ -3,4 +3,4 @@
 !/.gitconfig
 !/.profile
 !/.zshrc
-!/.config/tmux
+!/.config/tmux/.tmux.conf
