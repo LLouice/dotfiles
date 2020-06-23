@@ -54,7 +54,7 @@ alias ar='aria2c --conf-path="/home/llouice/.mycfgs/.aria2/aria2.conf"'
 
 # other
 alias pc=proxychains
-alias cfg="nvim ~/.mycfgs/.profile"
+alias cfg="nvim ~/.profile"
 alias cfgz="nvim ~/.zshrc"
 # alias rc="source $HOME/.mycfgs/.profile" 
 alias rz="source $HOME/.zshrc"
