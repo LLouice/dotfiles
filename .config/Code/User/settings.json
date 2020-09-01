@@ -3,6 +3,23 @@
     "files.autoSave": "onFocusChange",
     "editor.minimap.enabled": false,
     "editor.formatOnPaste": true,
+
+    // vim 
+    "vim.neovimPath": "/usr/bin/nvim",
+    "vim.enableNeovim": true,
+    "vim.useSystemClipboard": true,
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    // 相对显示代码行数
+    "editor.lineNumbers": "relative",//修复光标经过折叠代码时自动展开的 bug
+    // 修复光标经过折叠代码时自动展开的 bug
+    "vim.foldfix": true,
+    //映射空格键 + s 为 easymotion Start of word 指令快捷键
+    "vim.normalModeKeyBindingsNonRecursive": [{
+        "before": ["<space>", "s"],
+        "after": ["leader", "leader", "leader", "b", "d", "w"]
+    }],
     // VspaceCode settings
     "vim.leader": "<space>",
     "vim.visualModeKeyBindings": [
@@ -37,6 +54,15 @@
             "before": [
                 "f",
                 "d"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "j",
+                "k"
             ],
             "after": [
                 "<Esc>"
@@ -1133,6 +1159,15 @@
     "vim.insertModeKeyBindings": [
         {
             "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
                 "f",
                 "d"
             ],
@@ -1141,7 +1176,6 @@
             ]
         }
     ],
-    "vim.easymotion": true,
     /*"vim.otherModesKeyBindingsNonRecursive": [{
         "before": [
             "Z",
@@ -1158,6 +1192,7 @@
             }
         ]
     }],*/
+
     // workbench
     "workbench.statusBar.visible": true,
     "workbench.colorCustomizations": {
@@ -1228,6 +1263,7 @@
     
         "editor.defaultFormatter": "ms-python.python"
     },
+
     // Latex settings
     "latex-workshop.showContextMenu": true, //右键菜单
     "latex-workshop.intellisense.package.enabled": true, //根据加载的包，自动完成命令或包
@@ -1384,10 +1420,13 @@
         "*.bcf",
         "*.run.xml"
     ],
+
     // flake8
-    // "python.linting.flake8Enabled": false,
+    "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": ["--max-line-length=248"],
     "python.formatting.provider": "yapf",
-    "workbench.colorTheme": "Gruvbox Dark Soft",
-    "editor.fontLigatures": null
+    "python.languageServer": "Microsoft",
+    "workbench.colorTheme": "Bear Theme",
+    "javascript.suggest.completeFunctionCalls": true,
+    "typescript.suggest.completeFunctionCalls": true
 }
