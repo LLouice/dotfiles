@@ -43,6 +43,7 @@ alias vi=nvim
 alias vim=nvim
 alias duh="du -h --max-depth=0"
 alias fq="pc curl -IL www.youtube.com"
+alias kk="kill -9"
 
 # nvidia
 alias nv='nvidia-smi'
@@ -85,6 +86,8 @@ alias tch="conda activate tch"
 alias emd="emacs --daemon"
 alias ect="emacsclient -nw"
 
+export PATH="$HOME/.config/emacs/bin:$PATH"
+
 # tmux
 alias tmux="tmux -f /home/llouice/.config/tmux/.tmux.conf"
 alias tn="tmux new -s"
@@ -97,6 +100,14 @@ alias tks="tmux kill-server"
 
 # lazygit
 alias lg="lazygit"
+
+# arch
+alias tz="trizen"
+alias ptz="pc trizen"
+
+# tar
+alias tarc="tar -zcvf"
+alias tarx="tar -zxvf"
 #=============================== alias ====================================
 
 #=============================== export ====================================
